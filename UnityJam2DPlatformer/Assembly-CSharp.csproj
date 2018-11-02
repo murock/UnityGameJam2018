@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\EnemyMove.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerScore.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Game dev Unity/UnityGameJam2018/UnityGameJam2018/UnityJam2DPlatformer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
