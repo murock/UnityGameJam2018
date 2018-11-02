@@ -441,7 +441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90216ea90b3a73b479b7d24433655dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScore: 0
   timeLeftTxt: {fileID: 1407105157}
   playerScoreTxt: {fileID: 924783005}
 --- !u!1001 &902753280
@@ -1096,6 +1095,23 @@ Prefab:
     - target: {fileID: 1648871742403344, guid: f6bcba7864319ee41813b5cc4ee88f9c, type: 2}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648871742403344, guid: f6bcba7864319ee41813b5cc4ee88f9c, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072026420259090, guid: f6bcba7864319ee41813b5cc4ee88f9c, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114301961037432, guid: f6bcba7864319ee41813b5cc4ee88f9c, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114392095576942446, guid: f6bcba7864319ee41813b5cc4ee88f9c,
+        type: 2}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bcba7864319ee41813b5cc4ee88f9c, type: 2}

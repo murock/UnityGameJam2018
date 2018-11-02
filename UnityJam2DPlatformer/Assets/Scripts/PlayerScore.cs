@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerScore : MonoBehaviour {
 
     private float timeLeft = 120;
-    public int playerScore = 0;
+    public static int playerScore = 0;
     public Text timeLeftTxt;
     public Text playerScoreTxt;
 

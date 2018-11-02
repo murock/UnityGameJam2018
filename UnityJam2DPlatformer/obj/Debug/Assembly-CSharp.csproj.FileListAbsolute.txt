@@ -166,3 +166,4 @@ D:\Game dev Unity\UnityGameJam2018\UnityGameJam2018\UnityJam2DPlatformer\obj\Deb
 D:\Game dev Unity\UnityGameJam2018\UnityGameJam2018\UnityJam2DPlatformer\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\Game dev Unity\UnityGameJam2018\UnityGameJam2018\UnityJam2DPlatformer\obj\Debug\Assembly-CSharp.dll
 D:\Game dev Unity\UnityGameJam2018\UnityGameJam2018\UnityJam2DPlatformer\obj\Debug\Assembly-CSharp.pdb
+D:\Game dev Unity\UnityGameJam2018\UnityGameJam2018\UnityJam2DPlatformer\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
