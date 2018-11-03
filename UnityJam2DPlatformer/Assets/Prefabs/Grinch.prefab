@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50719421076219642}
   - component: {fileID: 70703210409911078}
   - component: {fileID: 114355726905995932}
+  - component: {fileID: 58747355966480540}
   m_Layer: 0
   m_Name: Grinch
   m_TagString: ground
@@ -65,6 +66,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58747355966480540
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118525680168492}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.7
 --- !u!61 &61661345300910664
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -99,7 +115,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1.5}
@@ -129,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemySpeed: 2
-  XMoveDirection: 1
+  XMoveDirection: -1
 --- !u!212 &212820906136769694
 SpriteRenderer:
   m_ObjectHideFlags: 1
