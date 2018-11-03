@@ -23,7 +23,7 @@ public class PlayerShooter : MonoBehaviour {
         {
             isShooting = false;
         }
-        if (isShooting)
+        if (isShooting && !GameManager.Instance.isGameOver)
         {
             this.Fire();
         }
