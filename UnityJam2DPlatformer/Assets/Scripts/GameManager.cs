@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager> {
 
+    public ObjectPool Pool { get; set; }
+
     [SerializeField]
     private Text gameOverTxt;
     [SerializeField]
@@ -14,7 +16,13 @@ public class GameManager : Singleton<GameManager> {
 	void Start () {
 		
 	}
-	
+
+    private void Awake()    //called after all components have intialized called before start
+    {
+        Pool = GetComponent<ObjectPool>();
+    }
+
+
     public void GameOver()
     {
         gameOverTxt.gameObject.SetActive(true);

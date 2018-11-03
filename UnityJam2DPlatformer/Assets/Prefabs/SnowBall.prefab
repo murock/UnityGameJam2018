@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212230230776861502}
   - component: {fileID: 58250792598924390}
   - component: {fileID: 114232074248571810}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SnowBall
   m_TagString: projectile
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1893560666249008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.201, y: -1.598, z: 0}
+  m_LocalPosition: {x: -22.219776, y: -3.3846755, z: 0}
   m_LocalScale: {x: 0.23922749, y: 0.23922749, z: 0.23922749}
   m_Children: []
   m_Father: {fileID: 0}

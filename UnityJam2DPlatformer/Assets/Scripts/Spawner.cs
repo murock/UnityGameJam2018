@@ -13,8 +13,7 @@ public class Spawner : MonoBehaviour {
     private float timeSinceTick;
 
     [SerializeField]
-    private GameObject prefab;
-
+    private string prefabName;
 
     // Use this for initialization
     void Start()
@@ -37,6 +36,7 @@ public class Spawner : MonoBehaviour {
     private void Spawn()
     {
         int spawnIndex = Random.Range(0, 4);
-        Instantiate(prefab, spawnPoints[spawnIndex].transform.position, Quaternion.identity);
+        GameObject prefab = GameManager.Instance.Pool.GetObject(prefabName);
+        prefab.transform.position = spawnPoints[spawnIndex].transform.position;
     }
 }

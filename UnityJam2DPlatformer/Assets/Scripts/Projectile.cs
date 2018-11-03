@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour {
+public class Projectile : LimitedLife {
 
     [SerializeField]
     private float speed = 10;
@@ -15,4 +15,6 @@ public class Projectile : MonoBehaviour {
     {
         transform.Translate(direction * speed * Time.deltaTime);
     }
+
+
 }

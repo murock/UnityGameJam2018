@@ -321,6 +321,7 @@ MonoBehaviour:
   - {fileID: 1388420}
   spawnRate: 0.5
   prefab: {fileID: 1118525680168492, guid: 98fe73ffb84024c41b106f14aeb9b2ed, type: 2}
+  prefabName: Grinch
 --- !u!1001 &424361171
 Prefab:
   m_ObjectHideFlags: 0
@@ -633,7 +634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5d109f801036c4283eda9f71587164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1893560666249008, guid: 6f70faf03a22b8947a43da734ded3ad2, type: 2}
+  projectileName: SnowBall
+  fireRate: 0.2
 --- !u!1 &781189250
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 800256110}
   - component: {fileID: 800256109}
+  - component: {fileID: 800256111}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -704,6 +707,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &800256111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 800256108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85935e46c356605458b7ad53b2929bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefabs:
+  - {fileID: 1118525680168492, guid: 98fe73ffb84024c41b106f14aeb9b2ed, type: 2}
+  - {fileID: 1893560666249008, guid: 6f70faf03a22b8947a43da734ded3ad2, type: 2}
 --- !u!1 &822139987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1514,7 @@ Prefab:
     - target: {fileID: 114392095576942446, guid: f6bcba7864319ee41813b5cc4ee88f9c,
         type: 2}
       propertyPath: m_WhatIsGround.m_Bits
-      value: 4294967295
+      value: 1335
       objectReference: {fileID: 0}
     - target: {fileID: 212644983801234226, guid: f6bcba7864319ee41813b5cc4ee88f9c,
         type: 2}

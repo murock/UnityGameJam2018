@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCollisions : MonoBehaviour {
+public class EnemyCollisions : LimitedLife
+{
 
     public Collider2D headCollider;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collider is " + collision.otherCollider + "Collision with: " + collision.gameObject.tag);
-      //  Debug.Log("Collision with: " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Player" && collision.otherCollider == headCollider)
         {
             PlayerScore.playerScore += 20;
@@ -27,8 +26,8 @@ public class EnemyCollisions : MonoBehaviour {
         if (collision.gameObject.tag == "projectile")
         {
             PlayerScore.playerScore += 5;
-            this.gameObject.SetActive(false);
-            collision.gameObject.SetActive(false);
+            GameManager.Instance.Pool.ReleaseObject(collision.gameObject);
+            GameManager.Instance.Pool.ReleaseObject(this.gameObject);
         }
         else if (collision.gameObject.tag == "endPoint" )
         {
