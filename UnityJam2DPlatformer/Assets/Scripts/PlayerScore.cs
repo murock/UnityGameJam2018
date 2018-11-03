@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerScore : MonoBehaviour {
 
-    private float timeLeft = 120;
+    private float timeLeft = 30;
     public static int playerScore = 0;
     public Text timeLeftTxt;
     public Text playerScoreTxt;
@@ -17,7 +17,9 @@ public class PlayerScore : MonoBehaviour {
         playerScoreTxt.text = ("Score: " + playerScore);
         if (timeLeft < 0.1f)
         {
-            PlayerHealth.Die();
+            GameManager.Instance.GameWon();
+            // stop spawning enemies
+            Spawner.spawnerOn = false;
         }
 	}
 

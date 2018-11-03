@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,6 +32,16 @@ public class GameManager : Singleton<GameManager> {
         gameOverTxt.gameObject.SetActive(true);
         Animator playerAnimator = player.GetComponent<Animator>();
         playerAnimator.SetTrigger("Die");
+    }
+
+    public void GameWon()
+    {
+        if (!isGameOver)
+        {
+            gameOverTxt.text = "You Saved" + Environment.NewLine + "Christmas!";
+            gameOverTxt.gameObject.SetActive(true);
+        }
+        Spawner.spawnerOn = false;
     }
 
 }

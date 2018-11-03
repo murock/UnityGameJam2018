@@ -9,6 +9,11 @@ public class LimitedLife : MonoBehaviour {
 
     public void Awake()
     {
+
+    }
+
+    public void startLife()
+    {
         Debug.Log("Coroutine kicked off");
         StartCoroutine(DestroySelfAfterSeconds(lifeTime));
     }

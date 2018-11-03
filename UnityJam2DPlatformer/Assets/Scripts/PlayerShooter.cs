@@ -39,6 +39,7 @@ public class PlayerShooter : MonoBehaviour {
         {
             allowFire = false;
             Projectile projectileScript = GameManager.Instance.Pool.GetObject(projectileName).GetComponent<Projectile>();
+            projectileScript.startLife();
             projectileScript.gameObject.transform.position = transform.position;
             projectileScript.direction = Vector3.right;
             fireCooldown = Time.time + fireRate;

@@ -15,6 +15,8 @@ public class Spawner : MonoBehaviour {
     [SerializeField]
     private string prefabName;
 
+    public static bool spawnerOn = true;
+
     // Use this for initialization
     void Start()
     {
@@ -26,7 +28,7 @@ public class Spawner : MonoBehaviour {
     {
         timeSinceTick += Time.deltaTime;
 
-        if (timeSinceTick >= spawnRate)
+        if (timeSinceTick >= spawnRate && spawnerOn)
         {
             timeSinceTick = 0;
             Spawn();
@@ -37,6 +39,11 @@ public class Spawner : MonoBehaviour {
     {
         int spawnIndex = Random.Range(0, 4);
         GameObject prefab = GameManager.Instance.Pool.GetObject(prefabName);
+        EnemyCollisions enemyCollisions = prefab.GetComponent<EnemyCollisions>();
+        if (enemyCollisions != null)
+        {
+            enemyCollisions.startLife();
+        }
         prefab.transform.position = spawnPoints[spawnIndex].transform.position;
     }
 }
