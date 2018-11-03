@@ -8,15 +8,17 @@ public class EnemyCollisions : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.otherCollider);
+        Debug.Log("collider is " + collision.otherCollider + "Collision with: " + collision.gameObject.tag);
+      //  Debug.Log("Collision with: " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Player" && collision.otherCollider == headCollider)
         {
             PlayerScore.playerScore += 20;
             this.gameObject.SetActive(false);
         }
-        else if (collision.gameObject.tag == "Player" && !collision.otherCollider == headCollider)
+        else if (collision.gameObject.tag == "Player" && !(collision.otherCollider == headCollider))
         {
-            GameManager.Instance.gameOverTxt.gameObject.SetActive(true);
+            Debug.Log("game over " + collision.otherCollider.name);
+            GameManager.Instance.GameOver();
         }
     }
 
@@ -28,9 +30,9 @@ public class EnemyCollisions : MonoBehaviour {
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
         }
-        else if (collision.gameObject.tag == "endPoint" || collision.gameObject.tag == "Player")
+        else if (collision.gameObject.tag == "endPoint" )
         {
-            GameManager.Instance.gameOverTxt.gameObject.SetActive(true);          
+            GameManager.Instance.GameOver();      
         }
     }
 }

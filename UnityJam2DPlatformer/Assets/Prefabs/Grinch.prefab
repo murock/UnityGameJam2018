@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118525680168492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.97, y: -3.28, z: 0}
+  m_LocalPosition: {x: -14.99, y: -2.61, z: 0}
   m_LocalScale: {x: 0.357, y: 0.357, z: 0.357}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,13 +72,13 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118525680168492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.4}
   serializedVersion: 2
   m_Radius: 1.7
 --- !u!61 &61661345300910664
@@ -115,11 +115,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.5}
-  m_Size: {x: 2.7, y: 1}
+  m_Offset: {x: 0, y: 1.7}
+  m_Size: {x: 2.58, y: 1}
   m_Direction: 1
 --- !u!114 &114355726905995932
 MonoBehaviour:

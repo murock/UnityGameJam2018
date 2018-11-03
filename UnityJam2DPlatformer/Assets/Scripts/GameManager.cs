@@ -5,11 +5,21 @@ using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager> {
 
-    public Text gameOverTxt;
+    [SerializeField]
+    private Text gameOverTxt;
+    [SerializeField]
+    private GameObject player;
 
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
+    public void GameOver()
+    {
+        gameOverTxt.gameObject.SetActive(true);
+        Animator playerAnimator = player.GetComponent<Animator>();
+        playerAnimator.SetTrigger("Die");
+    }
+
 }
