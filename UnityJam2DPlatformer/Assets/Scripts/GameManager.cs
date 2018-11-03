@@ -41,7 +41,6 @@ public class GameManager : Singleton<GameManager> {
             gameOverTxt.text = "You Saved" + Environment.NewLine + "Christmas!";
             gameOverTxt.gameObject.SetActive(true);
         }
-        Spawner.spawnerOn = false;
     }
 
 }

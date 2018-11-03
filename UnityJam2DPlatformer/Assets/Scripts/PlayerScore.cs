@@ -12,9 +12,12 @@ public class PlayerScore : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        timeLeft -= Time.deltaTime;
-        timeLeftTxt.text = ("Time Left: " + (int)timeLeft);
-        playerScoreTxt.text = ("Score: " + playerScore);
+        if (timeLeft > 0.1f)
+        {
+            timeLeft -= Time.deltaTime;
+            timeLeftTxt.text = ("Time Left: " + (int)timeLeft);
+            playerScoreTxt.text = ("Score: " + playerScore);
+        }
         if (timeLeft < 0.1f)
         {
             GameManager.Instance.GameWon();
