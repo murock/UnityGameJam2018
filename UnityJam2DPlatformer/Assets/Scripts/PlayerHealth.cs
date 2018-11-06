@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour {
         if (!String.IsNullOrEmpty(sceneName))
         {
             SceneManager.LoadScene(sceneName);
+            Spawner.spawnerOn = true;
         }
     }
 }

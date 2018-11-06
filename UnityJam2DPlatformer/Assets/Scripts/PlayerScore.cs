@@ -21,7 +21,7 @@ public class PlayerScore : MonoBehaviour {
         if (timeLeft < 0.1f)
         {
             GameManager.Instance.GameWon();
-            // stop spawning enemies
+            // stop spawning of objects
             Spawner.spawnerOn = false;
         }
 	}

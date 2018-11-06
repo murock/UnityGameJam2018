@@ -37,7 +37,7 @@ public class Spawner : MonoBehaviour {
 
     private void Spawn()
     {
-        int spawnIndex = Random.Range(0, spawnPoints.Length - 1);
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
         GameObject prefab = GameManager.Instance.Pool.GetObject(prefabName);
         EnemyCollisions enemyCollisions = prefab.GetComponent<EnemyCollisions>();
         if (enemyCollisions != null)

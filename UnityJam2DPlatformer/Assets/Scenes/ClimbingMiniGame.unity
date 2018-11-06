@@ -376,6 +376,52 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &349829830
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 15.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923234985992148, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_Name
+      value: SnowPlatformPassThrough (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &383893124
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +544,52 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a9ee94d3266c2e4b93144c7df07930d, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &599621204
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 11.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923234985992148, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_Name
+      value: SnowPlatformPassThrough (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &646239970
 Prefab:
@@ -651,7 +743,7 @@ MonoBehaviour:
   - {fileID: 180819691}
   - {fileID: 1370825532}
   - {fileID: 131002314}
-  spawnRate: 4
+  spawnRate: 1.5
   prefabName: SnowPlatformPassThrough
 --- !u!4 &754827681
 Transform:
@@ -1822,6 +1914,52 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1895853675}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1001 &1955072119
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 13.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306551096067366, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923234985992148, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+      propertyPath: m_Name
+      value: SnowPlatformPassThrough (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9bb4e9757a191d488834c49cc5a5b41, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &2002694913
 Prefab:
   m_ObjectHideFlags: 0
