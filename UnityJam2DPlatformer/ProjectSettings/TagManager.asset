@@ -8,6 +8,7 @@ TagManager:
   - present
   - projectile
   - endPoint
+  - platformPresent
   layers:
   - Default
   - TransparentFX

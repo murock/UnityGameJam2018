@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager> {
 
     public ObjectPool Pool { get; set; }
     public bool isGameOver = false;
+    public GameObject pauseMenu;
 
     [SerializeField]
     private Text gameOverTxt;
@@ -19,6 +20,12 @@ public class GameManager : Singleton<GameManager> {
 	void Start () {
 		
 	}
+
+
+    private void Update()
+    {
+        HandlePause();
+    }
 
     private void Awake()    //called after all components have intialized called before start
     {
@@ -40,6 +47,31 @@ public class GameManager : Singleton<GameManager> {
         {
             gameOverTxt.text = "You Saved" + Environment.NewLine + "Christmas!";
             gameOverTxt.gameObject.SetActive(true);
+        }
+    }
+
+    private void HandlePause()
+    {
+        if (Input.GetButtonDown("Pause"))
+        {
+            if (Time.timeScale == 1)
+            {
+                // Pause time
+                Time.timeScale = 0;
+                if (pauseMenu != null)
+                {
+                    pauseMenu.SetActive(true);
+                }
+            }
+            else
+            {
+                // Resume
+                Time.timeScale = 1;
+                if (pauseMenu != null)
+                {
+                    pauseMenu.SetActive(false);
+                }
+            }
         }
     }
 

@@ -9,7 +9,6 @@ public class SuperJump : MonoBehaviour {
 
     public const float superJumpCooldown = 5f;
     public const float superJumpDuration = 2f;
-    public Text superJumpTxt;
     public PlatformerCharacter2D player;
     public float extraJumpPower = 200f;
     public SpriteRenderer highlight;
@@ -30,7 +29,6 @@ public class SuperJump : MonoBehaviour {
             Debug.Log("fire2 pressed");
             // Increase player jump force
             player.m_JumpForce = player.m_JumpForce + extraJumpPower;
-            superJumpTxt.text = "SUPER JUMP ACTIVE";
             // Reset Cooldown
             totalSuperJumpCooldown = Time.time + superJumpCooldown;
             // Set Buff duration
@@ -42,7 +40,6 @@ public class SuperJump : MonoBehaviour {
         }
         if (Time.time > totalSuperJumpCooldown)
         {
-            superJumpTxt.text = "SUPER JUMP READY";
             // Set highlight color yellow
             highlight.color = new Color32(252, 255, 0, 139);
         }
@@ -50,7 +47,6 @@ public class SuperJump : MonoBehaviour {
         {
             isSuperJump = false;
             player.m_JumpForce = player.m_JumpForce - extraJumpPower;
-            superJumpTxt.text = "SUPER JUMP CHARGING";
             // Set highlight color red
             highlight.color = new Color32(255, 10, 0, 139);
         }

@@ -9,6 +9,7 @@ public class PlayerScore : MonoBehaviour {
     public static int playerScore = 0;
     public Text timeLeftTxt;
     public Text playerScoreTxt;
+    public Transform fallingScorer;
 
     // Update is called once per frame
     void Update () {
@@ -23,6 +24,12 @@ public class PlayerScore : MonoBehaviour {
             GameManager.Instance.GameWon();
             // stop spawning of objects
             Spawner.spawnerOn = false;
+        }
+
+        // Climbing level scoring
+        if (fallingScorer != null)
+        {
+            playerScore = (int)this.transform.position.y - (int)fallingScorer.position.y;
         }
 	}
 
