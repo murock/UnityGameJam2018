@@ -19,6 +19,10 @@ public class EnemyCollisions : LimitedLife
             Debug.Log("game over " + collision.otherCollider.name);
             GameManager.Instance.GameOver();
         }
+        if (collision.gameObject.tag != "enemy")
+        {
+            this.GetComponent<EnemyMove>().Flip();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,4 +38,5 @@ public class EnemyCollisions : LimitedLife
             GameManager.Instance.GameOver();      
         }
     }
+
 }

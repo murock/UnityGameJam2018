@@ -39,6 +39,7 @@ public class GameManager : Singleton<GameManager> {
 
     public void GameOver()
     {
+        PlayerHealth.ResetScene();
         gameOverTxt.text = "Game Over";
         isGameOver = true;
         gameOverTxt.gameObject.SetActive(true);

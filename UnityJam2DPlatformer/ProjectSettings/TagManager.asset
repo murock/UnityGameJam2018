@@ -9,6 +9,7 @@ TagManager:
   - projectile
   - endPoint
   - platformPresent
+  - enemy
   layers:
   - Default
   - TransparentFX
