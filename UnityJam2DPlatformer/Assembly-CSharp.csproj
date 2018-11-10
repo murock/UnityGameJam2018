@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LimitedLife.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\PersistantInfo.cs" />
     <Compile Include="Assets\Scripts\PlatformPresentPickUp.cs" />
     <Compile Include="Assets\Scripts\Player\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Scripts\Player\PlatformerCharacter2D.cs" />

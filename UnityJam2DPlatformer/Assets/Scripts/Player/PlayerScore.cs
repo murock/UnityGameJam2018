@@ -22,8 +22,6 @@ public class PlayerScore : MonoBehaviour {
         if (timeLeft < 0.1f)
         {
             GameManager.Instance.GameWon();
-            // stop spawning of objects
-            Spawner.spawnerOn = false;
         }
 
         // Climbing level scoring

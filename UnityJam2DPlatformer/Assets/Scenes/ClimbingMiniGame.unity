@@ -594,6 +594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba36590401586e4d9183abdf667fd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  superJumpCooldown: 5
+  superJumpDuration: 2
   player: {fileID: 1388751971}
   extraJumpPower: 150
   highlight: {fileID: 20235113}
@@ -2699,6 +2701,10 @@ Prefab:
     - target: {fileID: 224987894799476408, guid: fb54c9979ed43ea4983e39ad2dc75714,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567911274125724, guid: fb54c9979ed43ea4983e39ad2dc75714, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -7,8 +7,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class SuperJump : MonoBehaviour {
 
-    public const float superJumpCooldown = 5f;
-    public const float superJumpDuration = 2f;
+    public float superJumpCooldown = 5f;
+    public float superJumpDuration = 2f;
     public PlatformerCharacter2D player;
     public float extraJumpPower = 200f;
     public SpriteRenderer highlight;

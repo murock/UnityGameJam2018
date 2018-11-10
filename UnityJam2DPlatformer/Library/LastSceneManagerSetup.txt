@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ClimbingMiniGame.unity
+- path: Assets/Scenes/PlatformerLevel1.unity
   isLoaded: 1
   isActive: 1
