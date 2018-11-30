@@ -6,6 +6,7 @@ public class EnemyCollisions : LimitedLife
 {
 
     public Collider2D headCollider;
+    public Collider2D sideCollider;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -19,7 +20,7 @@ public class EnemyCollisions : LimitedLife
             Debug.Log("game over " + collision.otherCollider.name);
             GameManager.Instance.GameOver();
         }
-        if (collision.gameObject.tag != "enemy")
+        if (collision.otherCollider == sideCollider)
         {
             this.GetComponent<EnemyMove>().Flip();
         }

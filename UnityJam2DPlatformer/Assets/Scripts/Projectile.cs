@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : LimitedLife {
+public class Projectile : LimitedLife
+{
 
     [SerializeField]
     private float speed = 10;
@@ -16,5 +17,13 @@ public class Projectile : LimitedLife {
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("outside: "+collision.gameObject.tag);
+        if (collision.gameObject.tag != "enemy" && collision.gameObject.tag != "Player")
+        {
+            Debug.Log(collision.gameObject.tag);
+            GameManager.Instance.Pool.ReleaseObject(this.gameObject);
+        }
+    }
 }

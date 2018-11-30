@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50168366611035662}
   - component: {fileID: 70197863202376004}
   - component: {fileID: 114062928791141316}
-  - component: {fileID: 58939466934159568}
+  - component: {fileID: 61238209229198430}
   m_Layer: 2
   m_Name: PlatformingGrinch
   m_TagString: enemy
@@ -39,9 +39,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877937276076250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.83, y: 1.52, z: 0}
-  m_LocalScale: {x: 0.357, y: 0.357, z: 0.357}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.39337, y: 33.133965, z: 0}
+  m_LocalScale: {x: 2.296872, y: 2.4339147, z: 0.357}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,21 +66,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58939466934159568
-CircleCollider2D:
+--- !u!61 &61238209229198430
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877937276076250}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.4}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.1, y: 3.4}
+    newSize: {x: 3.1, y: 3.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.7
+  m_Size: {x: 3.1, y: 1.73}
+  m_EdgeRadius: 0
 --- !u!61 &61714154541484736
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -93,7 +103,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.55}
+  m_Offset: {x: 0, y: -1.37}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -104,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1, y: 2.34}
+  m_Size: {x: 1.82, y: 0.66}
   m_EdgeRadius: 0
 --- !u!70 &70197863202376004
 CapsuleCollider2D:
@@ -134,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 30
   headCollider: {fileID: 70197863202376004}
+  sideCollider: {fileID: 61238209229198430}
 --- !u!114 &114765232832933248
 MonoBehaviour:
   m_ObjectHideFlags: 1

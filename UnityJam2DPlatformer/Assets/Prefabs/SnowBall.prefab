@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212230230776861502}
   - component: {fileID: 58250792598924390}
   - component: {fileID: 114232074248571810}
+  - component: {fileID: 50715416932378586}
   m_Layer: 11
   m_Name: SnowBall
   m_TagString: projectile
@@ -42,6 +43,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50715416932378586
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893560666249008}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &58250792598924390
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -68,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8727d89e498debf43b37877ca238dff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTime: 30
   speed: 10
   direction: {x: 0, y: 0, z: 0}
 --- !u!212 &212230230776861502

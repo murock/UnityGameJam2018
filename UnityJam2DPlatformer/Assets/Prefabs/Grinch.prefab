@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 58747355966480540}
   m_Layer: 0
   m_Name: Grinch
-  m_TagString: ground
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 30
   headCollider: {fileID: 70703210409911078}
+  sideCollider: {fileID: 0}
 --- !u!114 &114585682172349518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpeed: 2
   XMoveDirection: -1
+  bothDirections: 0
 --- !u!212 &212820906136769694
 SpriteRenderer:
   m_ObjectHideFlags: 1

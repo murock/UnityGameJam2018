@@ -55,14 +55,14 @@ namespace UnityStandardAssets._2D
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
             //If player is jumping don't move camera in y direction
-            if (player != null && !player.m_Grounded)
-            {
-                newPos.y = transform.position.y;
-            }
-            if (constantY)
-            {
-                newPos.y = transform.position.y;
-            }
+            //if (player != null && !player.m_Grounded)
+            //{
+            //    newPos.y = transform.position.y;
+            //}
+            //if (constantY)
+            //{
+            //    newPos.y = transform.position.y;
+            //}
 
 
             transform.position = newPos;

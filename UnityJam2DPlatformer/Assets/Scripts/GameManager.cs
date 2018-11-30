@@ -45,6 +45,7 @@ public class GameManager : Singleton<GameManager> {
         gameOverTxt.gameObject.SetActive(true);
         Animator playerAnimator = player.GetComponent<Animator>();
         playerAnimator.SetTrigger("Die");
+        PlayerScore.playerScore = 0;
     }
 
     public void GameWon()
