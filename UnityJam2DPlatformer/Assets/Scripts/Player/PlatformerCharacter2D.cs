@@ -107,5 +107,10 @@ namespace UnityStandardAssets._2D
             /* Rotate fire point synced with player */
             transform.Rotate(0f, 180f, 0f);
         }
+
+        public void SetForce(Vector2 knockbackForce)
+        {
+            m_Rigidbody2D.velocity += knockbackForce;
+        }
     }
 }

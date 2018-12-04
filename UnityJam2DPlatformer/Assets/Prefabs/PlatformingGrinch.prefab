@@ -20,12 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4498142801998266}
   - component: {fileID: 212633355006593786}
-  - component: {fileID: 61714154541484736}
   - component: {fileID: 114765232832933248}
   - component: {fileID: 50168366611035662}
-  - component: {fileID: 70197863202376004}
-  - component: {fileID: 114062928791141316}
   - component: {fileID: 61238209229198430}
+  - component: {fileID: 114759705534114804}
   m_Layer: 2
   m_Name: PlatformingGrinch
   m_TagString: enemy
@@ -78,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.33}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -89,49 +87,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1, y: 1.73}
+  m_Size: {x: 3.1, y: 2.8}
   m_EdgeRadius: 0
---- !u!61 &61714154541484736
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1877937276076250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.37}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.1, y: 3.4}
-    newSize: {x: 3.1, y: 3.4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.82, y: 0.66}
-  m_EdgeRadius: 0
---- !u!70 &70197863202376004
-CapsuleCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1877937276076250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.7}
-  m_Size: {x: 2.58, y: 1}
-  m_Direction: 1
---- !u!114 &114062928791141316
+--- !u!114 &114759705534114804
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,12 +97,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1877937276076250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e27beee3213f944e90515d0b8536103, type: 3}
+  m_Script: {fileID: 11500000, guid: b6bac2d3e191e1641ac9766cedd8566e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 30
-  headCollider: {fileID: 70197863202376004}
-  sideCollider: {fileID: 61238209229198430}
+  RaycastLength: 0.5
+  NumberOfRays: 5
+  PlayerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &114765232832933248
 MonoBehaviour:
   m_ObjectHideFlags: 1

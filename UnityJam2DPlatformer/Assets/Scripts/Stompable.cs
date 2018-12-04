@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class Stompable : MonoBehaviour {
 
+    /// The force the hit will apply to the stomper
+    public Vector2 KnockbackForce = new Vector2(0f, 15f);
     /// the length of the rays
     public float RaycastLength = 0.5f;
     // the number of rays
@@ -55,6 +58,8 @@ public class Stompable : MonoBehaviour {
             }
         }
 
+        
+
         if (hitConnected)
         {
             // Do nothing if player is below enemie i.e enemie not hit from above
@@ -63,10 +68,22 @@ public class Stompable : MonoBehaviour {
                 return;
             }
 
-            // Increment player score and kill enimie
-            PlayerScore.playerScore += 20;
-            GameManager.Instance.Pool.ReleaseObject(this.gameObject);
+            PlatformerCharacter2D playerController = hitsStorage[hitConnectedIndex].collider.gameObject.GetComponent<PlatformerCharacter2D>();
+            if (playerController != null)
+            {
+                PerformStomp(playerController);
+            }
+
         }
+    }
+
+    private void PerformStomp(PlatformerCharacter2D playerController)
+    {
+        // Increment player score and kill enemy
+        PlayerScore.playerScore += 20;
+        GameManager.Instance.Pool.ReleaseObject(this.gameObject);
+
+        playerController.SetForce(KnockbackForce);
     }
 
     /// <summary>
